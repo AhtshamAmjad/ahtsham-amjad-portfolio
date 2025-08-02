@@ -23,14 +23,14 @@ const Footer: React.FC = () => {
               quality management, and ensuring software excellence across diverse platforms.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/ahtsham-amjad-81486a15b/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
                 LinkedIn
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
+              <a href="https://github.com/AhtshamAmjad" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
                 GitHub
               </a>
-              <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
-                Twitter
+              <a href="mailto:ahtshamamjad999@gmail.com" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
+                Email
               </a>
             </div>
           </div>
