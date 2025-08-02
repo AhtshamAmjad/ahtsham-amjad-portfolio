@@ -1,11 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "framework": "create-react-app",
-  "installCommand": "npm install --legacy-peer-deps",
-  "functions": {
-    "build/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "framework": "create-react-app"
 } 
