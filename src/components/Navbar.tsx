@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Sun, Moon } from 'lucide-react';
-import { ThemeContext } from '../App.tsx';
+import { ThemeContext } from '../App';
 import { AnimatePresence } from 'framer-motion';
 
 const Navbar: React.FC = () => {
