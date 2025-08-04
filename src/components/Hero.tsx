@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/AhtIsham- Resume .pdf';
+    link.href = '/AhtIsham-Resume.pdf';
     link.download = 'AhtIsham-Resume.pdf';
     document.body.appendChild(link);
     link.click();
