@@ -1,62 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
-export interface ThemeContextType {
-  isDark: boolean;
-  toggleTheme: () => void;
-}
-
-export const ThemeContext = React.createContext<ThemeContextType>({
-  isDark: false,
-  toggleTheme: () => {},
-});
+import React from 'react';
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (isDark) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  };
-
   return (
-    <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <div className={`min-h-screen transition-colors duration-300 ${
-        isDark ? 'bg-dark-900 text-white' : 'bg-gray-50 text-gray-900'
-      }`}>
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
+    <div style={{ 
+      minHeight: '100vh', 
+      backgroundColor: '#f9fafb', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      fontFamily: 'Arial, sans-serif'
+    }}>
+      <div style={{ textAlign: 'center' }}>
+        <h1 style={{ 
+          fontSize: '2.5rem', 
+          fontWeight: 'bold', 
+          color: '#111827', 
+          marginBottom: '1rem' 
+        }}>
+          Ahtsham Amjad
+        </h1>
+        <p style={{ 
+          fontSize: '1.25rem', 
+          color: '#4b5563', 
+          marginBottom: '2rem' 
+        }}>
+          ISTQB® Certified SENIOR SQA ENGINEER
+        </p>
+        <div style={{ 
+          backgroundColor: 'white', 
+          padding: '1.5rem', 
+          borderRadius: '0.5rem', 
+          boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' 
+        }}>
+          <p style={{ color: '#374151' }}>
+            ✅ Portfolio is working! This is a test to ensure the basic React app loads on Vercel.
+          </p>
+        </div>
       </div>
-    </ThemeContext.Provider>
+    </div>
   );
 }
 
