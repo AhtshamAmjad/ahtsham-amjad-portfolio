@@ -29,7 +29,7 @@ const Experience: React.FC = () => {
       title: "SQA Engnineer",
       company: "TechBazaar.",
       location: "Lahore, Pakistan",
-      period: "2020 - 2022",
+      period: "2022 - 2023",
       description: "Contributed to a greenfield project at Tech Bazaar by designing test strategies, executing functional and regression testing, and leading a 3-member QA team.",
       achievements: [
         "Spearheaded QA efforts from the ground up, ensuring seamless delivery of the project’s first major release.",
