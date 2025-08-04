@@ -2,9 +2,9 @@
   "name": "sqa-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
+
   "engines": {
-    "node": "20.x"
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "@types/node": "20.0.0",
