@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ahtsham-amjad-portfolio/static/css/main.e41ea8c8.css",
-    "main.js": "/ahtsham-amjad-portfolio/static/js/main.ab393a6c.js",
+    "main.js": "/ahtsham-amjad-portfolio/static/js/main.f3572971.js",
     "index.html": "/ahtsham-amjad-portfolio/index.html",
     "main.e41ea8c8.css.map": "/ahtsham-amjad-portfolio/static/css/main.e41ea8c8.css.map",
-    "main.ab393a6c.js.map": "/ahtsham-amjad-portfolio/static/js/main.ab393a6c.js.map"
+    "main.f3572971.js.map": "/ahtsham-amjad-portfolio/static/js/main.f3572971.js.map"
   },
   "entrypoints": [
     "static/css/main.e41ea8c8.css",
-    "static/js/main.ab393a6c.js"
+    "static/js/main.f3572971.js"
   ]
 }
