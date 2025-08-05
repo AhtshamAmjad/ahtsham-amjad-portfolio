@@ -18,8 +18,8 @@ const Hero: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/AhtshamAmjadResume.pdf';
-    link.download = 'AhtshamAmjadResume.pdf';
+    link.href = '/AhteshamCV.pdf';
+    link.download = 'AhteshamCV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -134,7 +134,8 @@ const Hero: React.FC = () => {
 
             {/* Professional Summary */}
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
-              ISTQB® Certified QA Engineer with a passion for enhancing QA processes and delivering seamless user experiences. Experienced in end-to-end testing of modern web applications. Proven ability to work independently, define testing strategies, and ensure high-quality software in fast-paced Agile teams.
+            ISTQB® Certified Senior QA Engineer with 5+ years of experience in ensuring the quality of modern web applications. Skilled in end-to-end manual and automated testing, defining test strategies, and optimizing QA workflows. Proven track record of delivering reliable, user-friendly software in fast-paced Agile environments. Adept at working independently and collaborating cross-functionally to catch bugs early, reduce release risks, and improve user experience.
+.
             </p>
 
             {/* Stats */}

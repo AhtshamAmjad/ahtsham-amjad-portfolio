@@ -61,7 +61,7 @@ const About: React.FC = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-6">
-            ISTQB® Certified QA Engineer with a passion for enhancing QA processes and delivering seamless user experiences. Experienced in end-to-end testing of modern web applications. Proven ability to work independently, define testing strategies, and ensure high-quality software in fast-paced Agile teams.
+          ISTQB® Certified QA Engineer with over 5 years of experience in end-to-end testing of modern web applications. Passionate about improving QA processes, optimizing test coverage, and delivering seamless user experiences. Proven ability to work independently, define effective testing strategies, and ensure high-quality software within fast-paced Agile environments..
           </p>
         </motion.div>
 
@@ -163,5 +163,7 @@ const About: React.FC = () => {
     </section>
   );
 };
+
+
 
 export default About; 

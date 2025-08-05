@@ -19,8 +19,7 @@ const Footer: React.FC = () => {
               Ahtsham Amjad
             </h3>
             <p className="text-gray-400 mb-4 max-w-md">
-              Senior Software Quality Assurance Engineer with expertise in test automation, 
-              quality management, and ensuring software excellence across diverse platforms.
+            Senior Software Quality Assurance Engineer with expertise in test automation, quality management, and delivering high-quality software across diverse platforms.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/in/ahtsham-amjad-81486a15b/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
@@ -96,9 +95,9 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 text-gray-400 mb-4 md:mb-0">
-            <span>© {currentYear} SQA Portfolio. Made with</span>
+            <span>© {currentYear} Ahtsham Amjad. All rights reserved</span>
             <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>using React & Tailwind CSS</span>
+            {/* <span>using React & Tailwind CSS</span> */}
           </div>
           
           <motion.button
