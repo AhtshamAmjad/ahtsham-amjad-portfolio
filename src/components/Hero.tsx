@@ -16,14 +16,14 @@ const Hero: React.FC = () => {
     }
   };
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/AhteshamCV.pdf';
-    link.download = 'AhteshamCV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement('a');
+  //   link.href = '/AhteshamCV.pdf';
+  //   link.download = 'AhteshamCV.pdf';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -170,15 +170,16 @@ const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.button
-                onClick={handleDownload}
+              <motion.a
+                href="/AhteshamCV.pdf"
+                download
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                 whileTap={{ scale: 0.95 }}
                 className="btn-primary flex items-center justify-center gap-2"
               >
-                <Download size={20} />
-                Download Resume
-              </motion.button>
+            <Download size={20} />
+          Download Resume
+              </motion.a>
               <motion.a
                 href="#projects"
                 whileHover={{ scale: 1.05 }}
