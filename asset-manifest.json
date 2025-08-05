@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/ahtsham-amjad-portfolio/static/css/main.e41ea8c8.css",
-    "main.js": "/ahtsham-amjad-portfolio/static/js/main.ba60aae8.js",
+    "main.js": "/ahtsham-amjad-portfolio/static/js/main.76371e8c.js",
+    "static/media/Ahtasham.jpg": "/ahtsham-amjad-portfolio/static/media/Ahtasham.0b05cbb5fce9fef00e2a.jpg",
+    "static/media/AhteshamCV.pdf": "/ahtsham-amjad-portfolio/static/media/AhteshamCV.d067f5548ad25ff29d40.pdf",
     "index.html": "/ahtsham-amjad-portfolio/index.html",
     "main.e41ea8c8.css.map": "/ahtsham-amjad-portfolio/static/css/main.e41ea8c8.css.map",
-    "main.ba60aae8.js.map": "/ahtsham-amjad-portfolio/static/js/main.ba60aae8.js.map"
+    "main.76371e8c.js.map": "/ahtsham-amjad-portfolio/static/js/main.76371e8c.js.map"
   },
   "entrypoints": [
     "static/css/main.e41ea8c8.css",
-    "static/js/main.ba60aae8.js"
+    "static/js/main.76371e8c.js"
   ]
 }
