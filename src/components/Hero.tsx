@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Download, Mail, Github, Linkedin, Phone, GraduationCap, Play, ExternalLink } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
+import AhteshamPic from '../assets/Ahtasham.jpg';
+import AhteshamCV from '../assets/AhteshamCV.pdf';
 
 const Hero: React.FC = () => {
   const [ref, inView] = useInView({
@@ -16,14 +18,14 @@ const Hero: React.FC = () => {
     }
   };
 
-  // const handleDownload = () => {
-  //   const link = document.createElement('a');
-  //   link.href = '/AhteshamCV.pdf';
-  //   link.download = 'AhteshamCV.pdf';
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = AhteshamCV;
+    link.download = 'AhteshamCV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -46,7 +48,7 @@ const Hero: React.FC = () => {
             <div className="mb-6"> {/* Reduced margin from mb-8 to mb-6 */}
               <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary-500 bg-gray-200 shadow-lg"> {/* Increased size from w-32 h-32 to w-40 h-40 */}
                 <img
-                  src="/Ahtasham.JPG"
+                  src={AhteshamPic}
                   alt="Ehtisham Amjad"
                   className="w-full h-full object-cover"
                 />
@@ -170,16 +172,15 @@ const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                href="/AhteshamCV.pdf"
-                download
+              <motion.button
+                onClick={handleDownload}
                 whileHover={{ scale: 1.05 }}
                  whileTap={{ scale: 0.95 }}
                 className="btn-primary flex items-center justify-center gap-2"
               >
             <Download size={20} />
           Download Resume
-              </motion.a>
+              </motion.button>
               <motion.a
                 href="#projects"
                 whileHover={{ scale: 1.05 }}
