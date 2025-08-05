@@ -18,8 +18,8 @@ const Hero: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/AhtIsham- Resume .pdf';
-    link.download = 'AhtIsham-Resume.pdf';
+    link.href = '/AhtshamAmjadResume.pdf';
+    link.download = 'AhtshamAmjadResume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
               <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary-500 bg-gray-200 shadow-lg"> {/* Increased size from w-32 h-32 to w-40 h-40 */}
                 <img
                   src="/Ahtasham.JPG"
-                  alt="Ahtsham Amjad"
+                  alt="Ehtisham Amjad"
                   className="w-full h-full object-cover"
                 />
               </div>
