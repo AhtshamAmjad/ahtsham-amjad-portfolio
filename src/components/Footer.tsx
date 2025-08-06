@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -96,7 +96,6 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 text-gray-400 mb-4 md:mb-0">
             <span>© {currentYear} Ahtsham Amjad. All rights reserved</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
             {/* <span>using React & Tailwind CSS</span> */}
           </div>
           
