@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -30,19 +31,57 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    
-    setIsSubmitting(false);
-    alert('Thank you for your message! I will get back to you soon.');
+    try {
+      const response = await fetch('https://formspree.io/f/xanblgaa', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+        
+        toast.success('Thank you for your message! I will get back to you soon.', {
+          duration: 5000,
+          position: 'top-right',
+          style: {
+            background: '#10B981',
+            color: '#fff',
+            borderRadius: '8px',
+            padding: '16px',
+          },
+        });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast.error('Failed to send message. Please try again later.', {
+        duration: 5000,
+        position: 'top-right',
+        style: {
+          background: '#EF4444',
+          color: '#fff',
+          borderRadius: '8px',
+          padding: '16px',
+        },
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -263,6 +302,7 @@ const Contact: React.FC = () => {
           </motion.div>
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };
